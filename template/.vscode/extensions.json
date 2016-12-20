@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "eg2.tslint",
+    "KnisterPeter.vscode-github",
+    "KnisterPeter.vscode-commitizen",
+    "KnisterPeter.vscode-ava-runner"
+  ]
+}

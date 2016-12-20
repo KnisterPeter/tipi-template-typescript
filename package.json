@@ -1,0 +1,34 @@
+{
+  "name": "tipi-template-typescript",
+  "version": "1.0.0",
+  "description": "tipi template for typescript projects",
+  "homepage": "https://github.com/KnisterPeter/tipi-template-typescript",
+  "repository": {
+    "type": "git",
+    "url": "KnisterPeter/tipi-template-typescript"
+  },
+  "author": {
+    "name": "Markus Wolf",
+    "email": "knister.peter@shadowrun-clan.de"
+  },
+  "maintainers": [
+    {
+      "name": "Markus Wolf",
+      "email": "knister.peter@shadowrun-clan.de"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/KnisterPeter/tipi-template-typescript/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "template/"
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "keywords": [
+    "tipi",
+    "tipi-template",
+    "typescript"
+  ]
+}

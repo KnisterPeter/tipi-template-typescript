@@ -1,0 +1,78 @@
+{
+  "name": "${name}",
+  "version": "1.0.0",
+  "description": "${description}",
+  "main": "dist/src/index.js",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "src"
+  ],
+  "scripts": {
+    "commitmsg": "conventional-changelog-lint -e",
+    "linter": "tslint --project ./tsconfig.json --type-check",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc --sourceMap",
+    "pretest": "npm run clean && tsc --inlineSourceMap",
+    "test": "nyc --reporter lcov ava",
+    "watch:build": "tsc --watch --sourceMap",
+    "watch:test": "npm test -- --watch",
+    "prerelease": "git checkout master && git pull origin master && npm test && npm run build",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin master && npm publish",
+    "update": "tipi update"
+  },
+  "tipi": {
+    "version": "${tipi:version}",
+    "template": "${tipi:template}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "${user}/${name}"
+  },
+  "keywords": [],
+  "author": "${author} <${email}>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/${user}/${name}/issues"
+  },
+  "homepage": "https://github.com/${user}/${name}#readme",
+  "devDependencies": {
+    "@knisterpeter/standard-tslint": "^1.0.0",
+    "ava": "^0.17.0",
+    "coveralls": "2.11.15",
+    "cz-conventional-changelog": "1.2.0",
+    "husky": "0.11.9",
+    "nyc": "9.0.1",
+    "rimraf": "2.5.4",
+    "source-map-support": "0.4.6",
+    "standard-version": "3.0.0",
+    "tipi-cli": "1.0.0",
+    "tslint": "4.0.0",
+    "typescript": "2.0.10"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "ava": {
+    "files": [
+      "dist/test/**/*.test.js"
+    ],
+    "source": [
+      "dist/src/**/*.js"
+    ],
+    "require": [
+      "source-map-support/register"
+    ]
+  },
+  "nyc": {
+    "exclude": [
+      "node_modules",
+      "coverage",
+      "dist/test"
+    ]
+  }
+}
