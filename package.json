@@ -1,6 +1,6 @@
 {
   "name": "tipi-template-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tipi template for typescript projects",
   "homepage": "https://github.com/KnisterPeter/tipi-template-typescript",
   "repository": {
@@ -22,7 +22,21 @@
   },
   "license": "MIT",
   "files": [
-    "template/"
+    "template/.conventional-changelog-lintrc",
+    "template/.editorconfig",
+    "template/.gitignore",
+    "template/.travis.yml",
+    "template/.vscode",
+    "template/appveyor.yml",
+    "template/index.d.ts",
+    "template/LICENSE",
+    "template/package.json",
+    "template/README.md",
+    "template/src",
+    "template/test",
+    "template/tsconfig.json",
+    "template/tslint.json",
+    "template/wallaby.js"
   ],
   "devDependencies": {},
   "dependencies": {},
