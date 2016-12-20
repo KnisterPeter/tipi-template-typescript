@@ -22,21 +22,7 @@
   },
   "license": "MIT",
   "files": [
-    "template/.conventional-changelog-lintrc",
-    "template/.editorconfig",
-    "template/.gitignore",
-    "template/.travis.yml",
-    "template/.vscode",
-    "template/appveyor.yml",
-    "template/index.d.ts",
-    "template/LICENSE",
-    "template/package.json",
-    "template/README.md",
-    "template/src",
-    "template/test",
-    "template/tsconfig.json",
-    "template/tslint.json",
-    "template/wallaby.js"
+    "template"
   ],
   "devDependencies": {},
   "dependencies": {},
