@@ -1,5 +1,7 @@
 # tipi-template-typesript
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KnisterPeter/tipi-template-typescript.svg)](https://greenkeeper.io/)
+
 This is a tipi-cli template. See the main documentation for reference:
 
 [tipi-cli](https://github.com/marionebl/tipi-cli#usage)
